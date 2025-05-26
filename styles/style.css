@@ -258,6 +258,7 @@ h1 {
 .about__text {
     display: flex;
     flex-direction: column;
+    color: black;
 }
 
 .p1 {
