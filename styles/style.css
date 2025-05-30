@@ -17,8 +17,12 @@
     gap: 32px;
 }
 
-.glavnaya {
+.header__links-list-item_no-bullit {
     list-style:none;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .address {
@@ -31,23 +35,20 @@
 .cover {
     background-image: url('../images/cover.jpg');
     position:relative;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 90%;
+    background-color: rgba(0, 0, 0, 0.6); 
   }
 
-h1 {
+.cover__title {
     color: white;
     z-index: 1;
     text-transform: uppercase;
@@ -90,7 +91,6 @@ h1 {
     word-spacing: 20px;
     padding-left: 50px;
     z-index: 1;
-    margin-top: 12px;
 }
 
 .bet-button {
@@ -122,6 +122,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -138,7 +139,7 @@ h1 {
     list-style: none;
 }
 
-.lots h1 {
+.lots h2 {
     color: black;
     font-size: 40px;
     margin-bottom: 0;
@@ -148,6 +149,10 @@ h1 {
 .lots__card-list-item {
     height: 596px;
     width: 334px;
+}
+
+.card-link {
+    max-width: 350px;
 }
 
 .card_type_film {
@@ -260,7 +265,7 @@ h1 {
     color: black;
 }
 
-.p1 {
+.paragrafh_about {
     padding-bottom: 24px;
 }
 
@@ -283,17 +288,7 @@ h1 {
     flex-direction: column;
 }
 
-.yt {
-    height: 48px;
-    width: 48px;
-}
-
-.vk {
-    height: 48px;
-    width: 48px;
-}
-
-.pinterest {
+.footer__social-icon {
     height: 48px;
     width: 48px;
 }
@@ -302,4 +297,9 @@ h1 {
     justify-self: center;
     display: flex;
     gap: 48px;
+    list-style: none;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
 }
